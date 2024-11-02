@@ -1,4 +1,4 @@
-#include <GL/glut.h>
+#include <GL/glut.h> //ganti gl Dengan GL 
 
 int x = 200;
 bool kanan = true;
@@ -39,7 +39,7 @@ void d() {
     glutSwapBuffers();
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv) { //ganti void dengan  int
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(800, 600);
@@ -49,5 +49,5 @@ int main(int argc, char** argv) {
     glutDisplayFunc(d);
     glutTimerFunc(0, timer, 0);
     glutMainLoop();
-    return 0;
+    return 0; // penambahan return 0
 }
